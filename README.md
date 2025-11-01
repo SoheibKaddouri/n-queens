@@ -26,7 +26,7 @@ The N-Queens problem asks for the number of ways to place $N$ non-attacking quee
 
 ---
 
-## 📸 Screenshot
+## 📸 Application Screenshot
 
 A visual example of the solver in action:
 
@@ -93,5 +93,6 @@ This is a personal project, but suggestions and feedback are welcome!
 ***
 
 **Soheib Kaddouri** / **SoheibKaddouri**
+
 
 
