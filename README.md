@@ -81,7 +81,7 @@ The **Breadth-First Search** is implemented using a **queue** (`queue = []`) whe
 * **`isSafe(board, row, col)`:** A helper function that checks if placing a queen at `(row, col)` attacks any previously placed queens (checks column, upper-left diagonal, and upper-right diagonal).
 * **`displaySolutions()`:** Handles the presentation of the final solutions, iterating through the `solutions` array with a set delay.
 
-
+***
 
 ## 🤝 Contribution
 
@@ -90,3 +90,4 @@ This is a personal project, but suggestions and feedback are welcome!
 ***
 
 **Soheib Kaddouri** / **SoheibKaddouri**
+
