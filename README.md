@@ -48,7 +48,7 @@ You only need a modern web browser (Chrome, Firefox, Edge, etc.).
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/SoheibKaddouri/n-queens.git](https://github.com/SoheibKaddouri/n-queens.git)
+    git clone https://github.com/SoheibKaddouri/n-queens.git
     ```
 2.  **Navigate to the project directory:**
     ```bash
@@ -93,6 +93,7 @@ This is a personal project, but suggestions and feedback are welcome!
 ***
 
 **Soheib Kaddouri** / **SoheibKaddouri**
+
 
 
 
