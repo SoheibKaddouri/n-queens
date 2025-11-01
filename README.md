@@ -82,3 +82,11 @@ The **Breadth-First Search** is implemented using a **queue** (`queue = []`) whe
 * **`displaySolutions()`:** Handles the presentation of the final solutions, iterating through the `solutions` array with a set delay.
 
 
+
+## 🤝 Contribution
+
+This is a personal project, but suggestions and feedback are welcome!
+
+***
+
+**Soheib Kaddouri** / **SoheibKaddouri**
