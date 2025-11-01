@@ -28,7 +28,7 @@ The N-Queens problem asks for the number of ways to place $N$ non-attacking quee
 A visual example of the solver in action:
 
 
-**Note:** The actual path should be adjusted if the image file has a different name or is placed outside the `images` folder. For this example, we assume `images/screenshot.png` is the correct path.
+![Screenshot of N-Queens Solver](images/screenshot.png)
 
 ---
 
@@ -80,3 +80,4 @@ The **Breadth-First Search** is implemented using a **queue** (`queue = []`) whe
 * **`solveBFS(N)`:** The main function that uses a queue to explore the state space. It starts with an empty board and, for each configuration, iterates through all possible safe column placements for the next queen.
 * **`isSafe(board, row, col)`:** A helper function that checks if placing a queen at `(row, col)` attacks any previously placed queens (checks column, upper-left diagonal, and upper-right diagonal).
 * **`displaySolutions()`:** Handles the presentation of the final solutions, iterating through the `solutions` array with a set delay.
+
