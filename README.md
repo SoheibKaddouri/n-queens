@@ -4,13 +4,6 @@ This is an interactive web application that solves and visualizes the classic **
 
 The N-Queens problem asks for the number of ways to place $N$ non-attacking queens on an $N \times N$ chessboard.
 
-## 🔗 Demos and Links
-
-| Link Type | URL |
-| :--- | :--- |
-| **Live Demo** | [https://soheibkaddouri.github.io/n-queens/](https://soheibkaddouri.github.io/n-queens/) |
-| **GitHub Repository** | [https://github.com/SoheibKaddouri/n-queens](https://github.com/SoheibKaddouri/n-queens) |
-
 ---
 
 ## ✨ Features
@@ -23,15 +16,6 @@ The N-Queens problem asks for the number of ways to place $N$ non-attacking quee
 
 ---
 
-## 📸 Screenshot
-
-A visual example of the solver in action:
-
-
-![Screenshot of N-Queens Solver](images/screenshot.png)
-
----
-
 ## 🛠️ Technology Stack
 
 | Technology | Purpose |
@@ -41,6 +25,16 @@ A visual example of the solver in action:
 | **JavaScript (ES6+)** | Core logic for the BFS algorithm and DOM manipulation for visualization. |
 
 ---
+
+## 📸 Screenshot
+
+A visual example of the solver in action:
+
+
+![Screenshot of N-Queens Solver](images/screenshot.png)
+
+---
+
 
 ## 🚀 Getting Started
 
@@ -83,6 +77,15 @@ The **Breadth-First Search** is implemented using a **queue** (`queue = []`) whe
 
 ***
 
+## 🔗 Links
+
+| Link Type | URL |
+| :--- | :--- |
+| **Live Site Deployment** | [https://soheibkaddouri.github.io/n-queens/](https://soheibkaddouri.github.io/n-queens/) |
+| **GitHub Repository** | [https://github.com/SoheibKaddouri/n-queens](https://github.com/SoheibKaddouri/n-queens) |
+
+***
+
 ## 🤝 Contribution
 
 This is a personal project, but suggestions and feedback are welcome!
@@ -90,4 +93,5 @@ This is a personal project, but suggestions and feedback are welcome!
 ***
 
 **Soheib Kaddouri** / **SoheibKaddouri**
+
 
