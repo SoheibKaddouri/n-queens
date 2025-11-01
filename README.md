@@ -2,7 +2,7 @@
 
 This is an interactive web application that solves and visualizes the classic **N-Queens Problem** using the **Breadth-First Search (BFS)** algorithm. It is implemented purely with **HTML, CSS, and JavaScript**.
 
-The N-Queens problem asks for the number of ways to place $N$ non-attacking queens on an $N \times N$ chessboard.
+The N-Queens problem asks for the number of ways to place N non-attacking queens on an N × N chessboard.
 
 ---
 
@@ -93,6 +93,7 @@ This is a personal project, but suggestions and feedback are welcome!
 ***
 
 **Soheib Kaddouri** / **SoheibKaddouri**
+
 
 
 
