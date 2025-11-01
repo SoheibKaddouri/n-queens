@@ -10,7 +10,7 @@ The N-Queens problem asks for the number of ways to place N non-attacking queens
 
 * **Interactive Solver:** Users can select a board size **$N$ (from 4 to 10)**.
 * **BFS Implementation:** Solves the N-Queens problem using a Breadth-First Search approach.
-* **Solution Visualization:** Displays all unique solutions found for the given $N$, visualizing each board configuration one after another.
+* **Solution Visualization:** Displays each unique solution for the chosen board size, animating them sequentially.
 * **Total Count:** Shows the total number of non-attacking queen configurations found.
 * **Pure Client-Side:** Built entirely with standard web technologies (HTML, CSS, JavaScript) with no backend dependencies.
 
@@ -93,6 +93,7 @@ This is a personal project, but suggestions and feedback are welcome!
 ***
 
 **Soheib Kaddouri** / **SoheibKaddouri**
+
 
 
 
