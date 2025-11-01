@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>N-Queens Visualizer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        #boardContainer {
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .cell {
+            width: 40px;
+            height: 40px;
+            border: 1px solid #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+
+        .cell:nth-child(even) {
+            background-color: #ddd;
+        }
+
+        .row:nth-child(even) .cell:nth-child(odd) {
+            background-color: #ddd;
+        }
+
+        button {
+            margin: 10px;
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+
+        input[type="number"] {
+            width: 60px;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>N-Queens Solver (BFS)</h1>
+
+    <label>Board size (4 ≤ N ≤ 10): </label>
+    <input type="number" id="boardSize" min="4" max="10" value="4">
+    <button onclick="startSolver()">Start BFS</button>
+
+    <div id="solutionsCount"></div>
+    <div id="boardContainer"></div>
+
+    <script>
+        let solutions = [];
+        let delay = 500; // ms between solution displays
+
+        function createBoard(board) {
+            const container = document.getElementById("boardContainer");
+            container.innerHTML = "";
+            for (let r = 0; r < board.length; r++) {
+                const rowDiv = document.createElement("div");
+                rowDiv.className = "row";
+                for (let c = 0; c < board.length; c++) {
+                    const cellDiv = document.createElement("div");
+                    cellDiv.className = "cell";
+                    if (board[r][c] === 1) cellDiv.textContent = "♛";
+                    rowDiv.appendChild(cellDiv);
+                }
+                container.appendChild(rowDiv);
+            }
+        }
+
+        function isSafe(board, row, col) {
+            for (let i = 0; i < row; i++)
+                if (board[i][col] === 1) return false;
+
+            for (let i = row - 1, j = col - 1; i >= 0 && j >= 0; i--, j--)
+                if (board[i][j] === 1) return false;
+
+            for (let i = row - 1, j = col + 1; i >= 0 && j < board.length; i--, j++)
+                if (board[i][j] === 1) return false;
+
+            return true;
+        }
+
+        function solveBFS(N) {
+            const queue = [];
+            const initialBoard = Array.from({length: N}, () => Array(N).fill(0));
+            queue.push({board: initialBoard, row: 0});
+            solutions = [];
+
+            while (queue.length > 0) {
+                const current = queue.shift();
+                const board = current.board;
+                const row = current.row;
+
+                if (row === N) {
+                    solutions.push(board.map(r => [...r]));
+                } else {
+                    for (let col = 0; col < N; col++) {
+                        if (isSafe(board, row, col)) {
+                            board[row][col] = 1;
+                            queue.push({board: board.map(r => [...r]), row: row + 1});
+                            board[row][col] = 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        function displaySolutions() {
+            let index = 0;
+            if (solutions.length === 0) {
+                document.getElementById("solutionsCount").textContent = "No solutions found.";
+                return;
+            }
+            document.getElementById("solutionsCount").textContent = `Total solutions: ${solutions.length}`;
+            function showNext() {
+                if (index >= solutions.length) return;
+                createBoard(solutions[index]);
+                index++;
+                setTimeout(showNext, delay);
+            }
+            showNext();
+        }
+
+        function startSolver() {
+            const N = parseInt(document.getElementById("boardSize").value);
+            if (N < 4 || N > 10) {
+                alert("Board size must be between 4 and 10!");
+                return;
+            }
+            solveBFS(N);
+            displaySolutions();
+        }
+    </script>
+</body>
+
+</html>
