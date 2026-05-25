@@ -1,6 +1,6 @@
 # ♛ N-Queens Solver (BFS Visualizer)
 
-"The pure, decoupled JavaScript logic for this BFS state exploration can be viewed directly in my centralized Algorithms Library."
+**"The pure, decoupled JavaScript logic for this BFS state exploration can be viewed directly in my centralized Algorithms Library."**
 
 
 This is an interactive web application that solves and visualizes the classic **N-Queens Problem** using the **Breadth-First Search (BFS)** algorithm. It is implemented purely with **HTML, CSS, and JavaScript**.
